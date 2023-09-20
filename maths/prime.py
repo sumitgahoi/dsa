@@ -17,3 +17,12 @@ def is_prime(n):
             return False
 
     return True
+
+#Linear Congruential method
+def generate_pseudo_random(seed, multiplier, increment, modulus, count = 5):
+    result = []
+    while count > 0:
+        seed = (seed * multiplier + increment) % modulus
+        result.append(seed / modulus)
+        count-=1
+    return result
