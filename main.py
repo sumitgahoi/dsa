@@ -7,7 +7,7 @@ from backtracking.permute import permute
 from backtracking.sudoku import Sudoku
 from dp.coin_change import coinChange
 from dp.max_subarray import maxSubArray
-from dp.edit_distance import EditDistance
+from dp.edit_distance import edit_distance
 
 if __name__ == "__main__":
     # print(gcd(414, 662))
@@ -29,5 +29,5 @@ if __name__ == "__main__":
 
     # print(coinChange([1, 2, 5], 11) == 3)
     # print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]) == 6)
-    print(EditDistance().solve("horse", "ros") == 3)
-    print(EditDistance().solve("intention", "execution") == 5)
+    print(edit_distance("horse", "ros") == 3)
+    print(edit_distance("intention", "execution") == 5)
